@@ -1,0 +1,38 @@
+.hero-container {
+margin-top: 75px;
+}
+
+
+.hero-img {
+height: 85vh;
+object-fit: cover;
+}
+
+
+.caption-box {
+background: rgba(0, 0, 0, 0.5);
+padding: 15px 25px;
+border-radius: 10px;
+}
+.gallery-header {
+  text-align: center;
+  margin-top: 100px;  
+  margin-bottom: 40px;
+}
+
+.gallery-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #222;
+  margin: 0;
+}
+
+.gallery-subtitle {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
