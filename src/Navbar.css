@@ -1,4 +1,4 @@
-.animated-title {
+/* .animated-title {
 font-size: 1.6rem;
 font-weight: 700;
 animation: glow 2s infinite ease-in-out;
@@ -9,4 +9,63 @@ animation: glow 2s infinite ease-in-out;
 0% { color: #ffffff; text-shadow: 0 0 5px #fff; }
 50% { color: #ffcc33; text-shadow: 0 0 20px #ffcc33; }
 100% { color: #ffffff; text-shadow: 0 0 5px #fff; }
+} */
+ /* NAVBAR BACKGROUND */
+.museum-nav {
+  background: #ffffff;
+  padding: 10px 30px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* LOGO */
+.museum-logo {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.bold-part {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.light-part {
+  font-weight: 400;
+}
+
+/* NAV LINKS */
+.nav-hover {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333 !important;
+  padding-bottom: 6px;
+}
+
+/* Underline (green → orange → pink gradient) */
+.nav-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #28a745, #ff5722, #ff77ff);
+  transition: width 0.55s ease-in-out;
+}
+
+.nav-hover:hover::after {
+  width: 100%;
+}
+
+/* MOBILE - reduce logo size */
+@media (max-width: 480px) {
+  .museum-logo {
+    font-size: 24px;
+  }
+
+  .bold-part {
+    font-size: 28px;
+  }
 }

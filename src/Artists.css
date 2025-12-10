@@ -1,0 +1,93 @@
+/* Title */
+.artists-section-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ================== ARTISTS GRID ================== */
+.artists-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* ---------- Artist Card ---------- */
+.artist-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+.artist-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* ---------- Artist Image ---------- */
+.artist-img-wrap {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.artist-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.35s ease;
+}
+
+.artist-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ---------- Artist Info ---------- */
+.artist-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.artist-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  color: #222;
+}
+
+.artist-art-title {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #555;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 992px) {
+  .artist-img-wrap {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .artist-img-wrap {
+    height: 200px;
+  }
+
+  .artist-name {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .artist-img-wrap {
+    height: 170px;
+  }
+
+  .artist-art-title {
+    font-size: 14px;
+  }
+}
